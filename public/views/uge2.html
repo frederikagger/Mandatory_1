@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Uge 2</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="u-margin-bottom-2">Uge 2</h1>
+      <div class="content">
+        <h2 class="sub-header">Backend basics</h2>
+        <hr class="hr" />
+        <p class="sub-sub-header">node.js</p>
+        <p class="u-margin-bottom-2">
+          node.js is a JavaScript runtime that makes JavaScript run away from
+          the browser.
+        </p>
+        <p class="sub-sub-header">npm</p>
+        <p class="u-margin-bottom-2">
+          npm stands for "node packet manager" and is responsible for pulling
+          the right dependencies into your project. To use npm in a node project
+          you first have to create a file called package.json where npm will
+          read dependencies from. To initalize a package.json you can either
+          create it on your own, or use the npm CLI command "npm init" with an
+          optional flag -y (-y for yes) to generate a package.json with default values. Then
+          you have to run "npm i" where "i" stands for install, which you can
+          also type out. "npm i" will make npm pull in the right dependencies into
+          your project. If you want to add a package, (e.g. express.js) you can
+          type the command "npm i express". That will pull in the latest version
+          of express for you.
+        </p>
+        <p class="sub-sub-header">express.js</p>
+        <p class="u-margin-bottom-2">
+          express.js is the most popular framework in node. It is widely used to create
+          REST API's. It's fast, lightweight and unopinioated. To initalize an
+          express app you only need the following lines of code.
+        </p>
+        <div class="snippet u-margin-bottom-2">
+          <img src="/assets/express-snippet.JPG" style="max-width: 100%;" alt="code snippet" />
+        </div>
+        <p class="u-margin-bottom-2">
+          These three lines of code will set express up for you in your project
+          and then you will need this next snippet to make the app run.
+        </p>
+
+        <div class="snippet u-margin-bottom-2">
+          <img srcset="/assets/express2-snippet.JPG" style="max-width: 100%;" alt="code snippet"/>
+        </div>
+        <p class="u-margin-bottom-2">
+          Then your app will be listening for incomming request on port 3000. It
+          will not do anything because the app doesnt have any routes
+          implemented yet.
+        </p>
+      </div>
+      <div class="navigation">
+        <button class="btn u-margin-bottom-2 btn-prev" onclick="redirectToPrevPage()">Previous week</button>
+        <button class="btn u-margin-bottom-2 btn-next" onclick="redirectToNextPage()">Next week</button>
+      </div>
+    </div>
+    <script src="../js/script.js" async defer></script>
+  </body>
+</html>
