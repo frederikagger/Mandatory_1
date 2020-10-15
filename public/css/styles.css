@@ -29,6 +29,10 @@ table{
     margin: 0 auto;
 }
 
+img{
+    max-width: 100%;
+}
+
 a{
     text-decoration: none;   
     color: #0049B7;
